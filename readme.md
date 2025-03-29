@@ -1,6 +1,7 @@
 # Elasticsearch Reindex with Lowercase Field Names
 
-Have you ever indexed a ton of documents and then realized there's a "[best practice](https://www.elastic.co/guide/en/beats/devguide/current/event-conventions.html)" in Elasticsearch saying that field names should be lowercase? **No?** ...Well, I did. So I built this script to make my life easier by aligning my indices to that standard.
+Have you ever indexed a ton of documents and then realized there's a "<a href="https://www.elastic.co/guide/en/beats/devguide/current/event-conventions.html" target="_blank">best practice</a>"
+in Elasticsearch saying that field names should be lowercase? **No?** ...Well, I did. So I built this script to make my life easier by aligning my indices to that standard.
 
 Basically, it takes an existing index, lowercases all the field names, and reindexes the data.  
 You can choose to create a new index (if you're emotionally attached to your original one) or overwrite it with a fresh, lowercase-compliant version.
